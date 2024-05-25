@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #1e272e;
+}
+.div-arrow{
+  width: 25vw;
+  height: 0vh;
+  border: 2px solid #ff6b6b;
+}
+.Sign-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 2%;
+  font-weight: bold;
+  color: #ffffff; /* Changed to white */
+}
+.Sign-main > div:not(:last-child){
+  margin-bottom: 2%;
+}
+
+.qrcode-div, .personInfo, .weather-div{
+  width: 40vw;
+}
+.qrcode-div, .personInfo, .weather-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff; /* Changed to white */
+}
+.personInfo{
+  font-size: 1.2em;
+}
+.current-date{
+  font-size: 1.4em;
+}
+.qrcode-div{
+  font-size: 1.1em;
+}
+.qrcode-div > h3{
+  margin-left: 2vw;
+}
+.weather{
+  background-color: #f7f1e3;
+  border-radius: 1rem;
+}
+.weather > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #1e272e;
+  border-radius: 25px;
+  text-align: center;
+  color: #1e272e;
+}
+.weather > div h3{
+  padding: 0% 2%;
+  margin: 5% 0%;
+}
+
+.personInfo-logo{
+  border-radius: 50%;
+  height: 20vh;
+}
+
+.qrImg{
+  width: 10vw;
+  height: 10vw;
+}
+.status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.available, .edit{
+  background-color: #1dd1a1;
+}
+.unavailable, .delete{
+  background-color: #ff6b6b;
+}
+
+/* Book */
+.book{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  color: #ffffff; /* Changed to white */
+}
+
+.book > form > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.book > form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+
+.book input:not([type="submit"], [type='date'], [type='time'], [list]) {
+  margin: 2% 0%;
+  width: 20vw;
+  padding: 2%;
+  border-radius: 25px;
+  border: 2px solid #1e272e;
+  outline: none;
+}
+
+.book input[type="submit"] {
+  background-color: #1dd1a1;
+  border-radius: 50px;
+  border: 2px solid #1e272e;
+  padding: 3%;
+  text-align: center;
+  width: 40%;
+  font-size: 1em;
+}
+
+.book input[type="submit"]:hover {
+  background-color: #10ac84;
+  cursor: pointer;
+}
+
+.book input[type="submit"]:active {
+  background-color: #0a785a;
+}
+
+.book label {
+  margin-bottom: 1%;
+  border-bottom: 2px solid #ffffff; /* Changed to white */
+  width: calc(100% - 11vw);
+}
+
+.timeInputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeInputs input {
+  height: 3vh;
+  font-size: 1em;
+}
+
+.timeInputs input:nth-child(1) {
+  width: 50%;
+}
+
+.timeInputs input:nth-child(2) {
+  width: 32%;
+}
+
+/* Admin page styling */
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+th {
+  background-color: #002a54;
+  color: white;
+}
+th,
+td {
+  width: 15vw;
+  text-align: center;
+  border: 1px solid #1e272e;
+  padding: 5px;
+}
+td{
+  height: 5vh;
+  background-color: #f7f1e3;
+}
+h2 {
+  color: #1e90ff;
+}
+.buttons{
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6%;
+}
+.tableButton{
+  width: 40%;
+  padding: 4%;
+  border: none;
+  border-radius: 5px;
+}
+
+.admin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.adminButtons{
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+.adminButton{
+  width: 30%;
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.navbar{
+  margin-top: 1vh;
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar > a{
+  text-decoration: none;
+  color: #ffffff; /* Changed to white */
+  font-size: 1.2em;
+}
+
+.navbar > a:hover{
+  color: rgba(255, 255, 255, 0.8); /* Changed to white with opacity */
+  text-decoration: underline;
+}
+
+.available-times{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff; /* Changed to white */
+  font-size: 1.2em;
+}
+.available-times > h3 {
+  padding: 0% 2%;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ffffff; /* Changed to white */
+}
+.available-times > ul {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+.available-times > ul > li {
+  margin-bottom: 1em;
+  padding: 0.1% 2%; 
+  border-bottom: 1px solid #1e272e;
+}
+
+.add-time-form > form {
+  width: 15%;
+}
+
+.add-time-form > form input {
+  padding: 2%;
+  font-size: 1em;
+}
+
+.add-time-form > form input[type="time"] {
+  width: 35%;
+}
